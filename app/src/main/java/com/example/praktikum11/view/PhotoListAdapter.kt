@@ -33,7 +33,8 @@ class PhotoListAdapter(var photos: ArrayList<Photo>) : RecyclerView.Adapter<Phot
 
             itemView.tvTitle.text = photos.title
             itemView.url.text = photos.url
-            itemView.setOnClickListener { view -> Toast.makeText(itemView.context,"Hello",Toast.LENGTH_LONG).show()
+            itemView.tvid.text = photos.id.toString()
+            itemView.setOnClickListener { view -> Toast.makeText(itemView.context,"Image :"+photos.title,Toast.LENGTH_LONG).show()
             }
 
             Picasso.get().load(photos.thumbnail).into(itemView.imageView)

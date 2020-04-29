@@ -31,8 +31,9 @@
 
                 <ImageView
                     android:id="@+id/imageView"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:layout_marginTop="10dp"
                     android:scaleType="fitXY"
                     tools:srcCompat="@tools:sample/avatars" />
 
@@ -40,7 +41,24 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:layout_marginLeft="10dp">
+                    android:layout_marginLeft="5dp">
+
+                    <TextView
+                        android:id="@+id/id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginLeft="6dp"
+                        android:text="Id"
+                        android:textColor="@color/colorAccent" />
+
+                    <TextView
+                        android:id="@+id/tvid"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:textSize="12sp"
+                        android:text="ID" />
 
                     <TextView
                         android:id="@+id/title"
@@ -55,6 +73,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="16dp"
+                        android:textSize="12sp"
                         android:text="@string/imagename"
                         android:textAppearance="@style/TextAppearance.AppCompat.Small" />
 
@@ -72,7 +91,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="16dp"
-                        android:text="URL" />
+                        android:text="URL"
+                        android:textSize="12sp"/>
                 </LinearLayout>
             </LinearLayout>
 
